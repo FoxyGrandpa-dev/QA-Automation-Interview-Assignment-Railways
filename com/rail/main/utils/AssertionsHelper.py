@@ -1,13 +1,10 @@
-from selenium.webdriver.common.by import By
 
-from com.rail.main.utils.ProjectLog import ProjectLog
 
 
 class AssertionsHelper:
 
     def __init__(self, driver):
         self.driver = driver
-        self.logger = ProjectLog().get_logger()
 
     def assert_element_is_displayed(self, web_element_locator):
         """
@@ -22,6 +19,6 @@ class AssertionsHelper:
         given an expected url - asserts if the current url is == to expected url
         :param expected_url: expected resulting url after test steps
         """
-        self.logger.info(f"expected url: {expected_url} - current_url: {self.driver.get_current_url()}")
+        print(f"\nexpected url: {expected_url} - current_url: {self.driver.get_current_url()}")
         assert self.driver.get_current_url() == expected_url
 

@@ -2,11 +2,9 @@ import pytest
 
 from Config import REGISTRATION_PAGE
 from com.rail.main.pages.RegistrationPage import RegistrationPage
-from com.rail.main.flows.LoginFlows import LoginFlows
 from com.rail.main.flows.RegistrationFlows import RegistrationFlows
 from com.rail.main.utils.AssertionsHelper import AssertionsHelper
 from com.rail.main.utils.WebdriverHelper import WebdriverHelper
-
 
 
 class TestRegistration:
@@ -22,3 +20,4 @@ class TestRegistration:
     def test_registration_sanity(self):
         self.registration_flows.perform_register()
         self.assertions.assert_element_is_displayed(RegistrationPage.successful_registration_message)
+
