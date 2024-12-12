@@ -4,4 +4,9 @@
 ### Login Test - ok
 ### Search in homepage Test - ok
 ### Assertions - ok
-### Report - broken!
+### Report - ok
+
+
+run tests terminal cmd:
+pytest --html=reports/test_report.html --self-contained-html
+
