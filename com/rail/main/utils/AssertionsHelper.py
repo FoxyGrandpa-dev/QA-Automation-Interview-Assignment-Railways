@@ -1,6 +1,5 @@
 
 
-
 class AssertionsHelper:
 
     def __init__(self, driver):
