@@ -1,6 +1,3 @@
-
-from Config import TEST_EMAIL, TEST_PASSWORD
-from com.rail.main.pages.LoginPage import *
 from com.rail.main.pages.RegistrationPage import *
 import random
 

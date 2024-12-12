@@ -4,8 +4,8 @@ from pytest_html import extras
 import sys
 import os
 
-# Add project root to PYTHONPATH
 sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
+
 
 def pytest_html_report_title(report):
     report.title = "My Selenium Test Report"

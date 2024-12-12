@@ -5,6 +5,7 @@ from com.rail.main.utils.AssertionsHelper import AssertionsHelper
 from com.rail.main.flows.LoginFlows import LoginFlows
 from com.rail.main.utils.WebdriverHelper import WebdriverHelper
 
+
 class TestLogin:
 
     @pytest.fixture(autouse=True)
